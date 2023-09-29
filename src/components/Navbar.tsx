@@ -6,20 +6,24 @@ const StyledContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 25px;
+  gap: 2em;
   z-index: 999;
+  padding: 15px 32px;
 `;
 
 const StyledNavbar = styled.nav`
   z-index: 999;
+  display: flex;
 `;
 
 const StyledNavLink = styled(Link)`
-  color: red;
+  color: black;
+  font-family: 'Courier', sans-serif;
+  font-size: 12px;
   text-decoration: none;
 
   &:hover {
-    color: #ff0000; 
+    color: black; 
     text-decoration: underline;
   }
 `;
@@ -55,12 +59,30 @@ const StyledNumberIndicator = styled.div`
   width: 14px;
 `;
 
+const StyledHomeLink = styled(Link)`
+  color: black;
+  font-family: 'Courier', sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transform: rotate(90deg) translateY(70px) translateX(90px);
+  letter-spacing: .7em;
+
+  &:hover {
+    color: black; 
+    text-decoration: underline;
+  }
+`;
+
 const NavBar: React.FC = () => {
   return (
     <StyledContainer>
         <StyledNavbar>
-          <StyledNavLink to="/">
-            Home
+          <StyledHomeLink to="/">
+            The Workshop
+          </StyledHomeLink>
+          <StyledNavLink to="/about">
+            Carl Auböck Designs 1930—1980
           </StyledNavLink>
         </StyledNavbar>
         <StyledContainer>

@@ -8,7 +8,7 @@ const Container = styled.div`
   flex-wrap: wrap;
   height: 100vh;
   width: 100%;
-  margin-top: -2.16rem;
+  margin-top: -6.12rem;
 `;
 
 const LeftSide = styled.div`
@@ -57,6 +57,7 @@ const StyledParagraph = styled.p`
   font-size: 12px;
   font-weight: lighter;
   display: flex;
+  line-height: 1.5em;
   justify-content: flex-end;
   padding: 0 5em 0 25em;
 `;
