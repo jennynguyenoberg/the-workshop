@@ -3,13 +3,17 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Navbar from './components/Navbar';
 import styled, { createGlobalStyle } from 'styled-components';
+import OddFontWoff from './assets/fonts/Ogg-Regular.woff';
+import OddFontWoff2 from './assets/fonts/Ogg-Regular.woff2';
 
-// Create a global style to reset the margin on the body element
 const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'Odd';
-    src: url('/src/assets/fonts/Ogg-Regular.woff2') format('woff2'),
-        url('/src/assets/fonts/Ogg-Regular.woff') format('woff');
+    src: local('Odd'), local('Odd'),
+    url(${OddFontWoff2}) format('woff2'),
+    url(${OddFontWoff}) format('woff');
+    font-weight: 300;
+    font-style: normal;
   }
   
   body {
