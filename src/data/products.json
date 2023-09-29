@@ -1,6 +1,14 @@
 [
   {
     "id": 1,
+    "name": "Hero image",
+    "objectDesc": "",
+    "objectNum": 0,
+    "price": 0,
+    "img": "/images/hero-flatlay.jpg"
+  },
+  {
+    "id": 2,
     "name": "Fondue Fork Set",
     "objectDesc": "Carl Auböck III collection of three fondue fork sets Austria, c.1960 | Amboss stainless steel, teak, brass 9¾ w × ½ d × ¼ h in Each set is comprised of four forks; twelve forks total. Sold with original boxes.",
     "objectNum": 232,
@@ -8,7 +16,7 @@
     "img": "/images/fondue-fork-set.jpg"
   },
   {
-    "id": 2,
+    "id": 3,
     "name": "Brass Bowl",
     "objectDesc": "Carl Auböck II rare and custom bowl c. 1950 silver 4¾ w × 3 d × 2 h in This rare and custom design is made of silver. It is the only known work in silver to come out of the Auböck workshop.",
     "objectNum": 120,
@@ -16,7 +24,7 @@
     "img": "/images/brass-bowl.jpg"
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "Chess Set",
     "objectDesc": "Carl Auböck III chess set 1968 beech, stained beech, nickel- plated steel, enameled steel 14½ w × 14¼ d × 1¼ h in Sold with vintage box which folds into playing board.",
     "objectNum": 121,
@@ -24,7 +32,7 @@
     "img": "/images/chess-set.jpg"
   },
   {
-    "id": 4,
+    "id": 5,
     "name": "Bookends",
     "objectDesc": "Carl Auböck II bookends, pair c. 1947 polished brass 2¾ w × 1½ d × 5 h in",
     "objectNum": 142,
@@ -32,7 +40,7 @@
     "img": "/images/bookends.jpg"
   },
   {
-    "id": 5,
+    "id": 6,
     "name": "Ashtray",
     "objectDesc": "Carl Auböck II ashtray, model 3192 1937 patinated brass 6 w × 2½ d × 1 h in",
     "objectNum": 118,
@@ -40,7 +48,7 @@
     "img": "/images/ashtray.jpg"
   },
   {
-    "id": 6,
+    "id": 7,
     "name": "Clothes Brush",
     "objectDesc": "Carl Auböck III clothes brush 1962 walnut, horsehair 5½ w × 5½ d × 2 h in",
     "objectNum": 107,
