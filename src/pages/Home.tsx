@@ -1,10 +1,11 @@
 import React from 'react';
 import ProductGallery from '../components/ProductGallery';
+import Hero from '../components/Hero';
 
 const Home: React.FC = () => {
   return (
     <div>
-      <h1>Welcome to the Art Gallery</h1>
+      <Hero />
       <ProductGallery />
     </div>
   );
