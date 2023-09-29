@@ -1,5 +1,6 @@
 import { Product } from '../types/types';
 import styled from 'styled-components';
+import { formatCurrency } from '../utils/formatCurrency'
 
 const ProductItemContainer = styled.div`
   border: 1px solid #ccc;
@@ -18,7 +19,7 @@ const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
       <img src={product.img} alt={product.name} />
       <h2>{product.name}</h2>
       <p>{product.objectDesc}</p>
-      <p>Price: ${product.price}</p>
+      <p>Price: {formatCurrency(product.price)}</p>
     </ProductItemContainer>
   );
 };
