@@ -7,10 +7,11 @@ const StyledContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 25px;
+  z-index: 999;
 `;
 
 const StyledNavbar = styled.nav`
-  
+  z-index: 999;
 `;
 
 const StyledNavLink = styled(Link)`
