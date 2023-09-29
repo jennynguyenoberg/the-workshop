@@ -34,11 +34,12 @@ const HeroImage = styled.img`
 const SignatureImage = styled.img`
   max-width: 62%;
   max-height: 62%;
+  padding-left: 1.3em;
 `;
 
 const StyledText = styled.h1`
   font-family: 'Odd', serif;
-  font-size: 110px;
+  font-size: 100px;
   font-weight: lighter;
   background-color: transparent;
   margin: 0;
@@ -47,9 +48,8 @@ const StyledText = styled.h1`
 const LeftSideContainer = styled.div`
   display: flex;
   align-items: center;
-  gap: 2em;
   margin-top: 10em;
-  padding-left: 5em;
+  padding-left: 7em;
 `;
 
 const StyledParagraph = styled.p`
@@ -64,11 +64,11 @@ const StyledParagraph = styled.p`
 
 const StyledWord = styled.h1`
   font-family: 'Odd', serif;
-  font-size: 110px;
+  font-size: 100px;
   font-weight: lighter;
   background-color: transparent;
   margin-top: -.5em;
-  padding-left: .7em;
+  padding-left: 1.1em;
 `;
 
 interface HeroImageProps {

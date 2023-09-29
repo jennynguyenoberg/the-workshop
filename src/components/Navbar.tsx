@@ -14,6 +14,7 @@ const StyledContainer = styled.div`
 const StyledNavbar = styled.nav`
   z-index: 999;
   display: flex;
+  gap: 2.5em;
 `;
 
 const StyledNavLink = styled(Link)`
