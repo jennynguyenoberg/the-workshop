@@ -21,13 +21,16 @@ const ProductGallery: React.FC = () => {
     }, 1000);
   }, []);
 
+  // Create a new array without the first element
+  const productsWithoutFirst = products.slice(1);
+
   return (
     <div>
       {isLoading ? (
         <p>Loading...</p>
       ) : (
         <GalleryContainer>
-          {products.map((product) => (
+          {productsWithoutFirst.map((product) => (
             <ProductItem key={product.id} product={product} />
           ))}
         </GalleryContainer>
