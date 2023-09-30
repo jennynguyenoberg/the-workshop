@@ -10,7 +10,6 @@ export const ProductItemContainer = styled.div`
   font-family: 'Courier', sans-serif;
   font-size: 12px;
   line-height: 1.5em;
-  background-color: blue;
 `;
 
 export const ProductText = styled.div`
@@ -18,7 +17,6 @@ export const ProductText = styled.div`
   padding: 0 24px;
   display: flex;
   flex-direction: column;
-  background-color: pink;
 `;
 
 export const ProductImage = styled.img`
@@ -29,7 +27,7 @@ export const ProductImage = styled.img`
 export const ProductTextContent = styled.div`
   margin-top: 2em;
 `;
-  
-  export const ProductTextPara = styled.p`
+
+export const ProductTextPara = styled.p`
   margin: 0;
 `;
