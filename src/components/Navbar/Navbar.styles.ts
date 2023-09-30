@@ -32,8 +32,7 @@ export const StyledNavLink = styled(Link)`
 export const StyledButton = styled.button`
   padding: 0;
   margin: 0;
-  border: .5px solid black;
-  border-radius: 50%;
+  border: none;
   color: none;
   background-color: transparent;
   cursor: pointer;
