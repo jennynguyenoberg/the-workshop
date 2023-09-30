@@ -7,7 +7,7 @@ const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   height: 100vh;
-  width: 100%;
+
   margin-top: -6.12rem;
 `;
 
@@ -27,8 +27,8 @@ const RightSide = styled.div`
 `;
 
 const HeroImage = styled.img`
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
 `;
 
 const SignatureImage = styled.img`
