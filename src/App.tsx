@@ -28,11 +28,11 @@ const App: React.FC = () => {
   return (
     <>
       <GlobalStyle />
-        <Navbar />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='about' element={<About />} />
-        </Routes>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='about' element={<About />} />
+      </Routes>
     </>
   );
 };

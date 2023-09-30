@@ -14,7 +14,7 @@ const NavBar: React.FC = () => {
         <StyledHomeLink to="/">
           The Workshop
         </StyledHomeLink>
-        <StyledNavLink to="/about">
+        <StyledNavLink to="/">
           Carl Auböck Designs 1930—1980
         </StyledNavLink>
       </StyledNavbar>

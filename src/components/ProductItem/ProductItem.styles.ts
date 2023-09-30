@@ -18,8 +18,7 @@ export const ProductText = styled.div`
 `;
 
 export const ProductImage = styled.img`
-  width: 45%;
-  height: 100%;
+
 `;
 
 export const ProductTextContent = styled.div`
@@ -28,4 +27,5 @@ export const ProductTextContent = styled.div`
 
 export const ProductTextPara = styled.p`
   margin: 0;
+  width: 100%;
 `;
