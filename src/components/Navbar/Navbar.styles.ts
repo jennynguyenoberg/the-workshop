@@ -1,8 +1,8 @@
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import cartImage from "/images/Cart.svg"
+import { Link } from 'react-router-dom';
+import cartImage from "/images/Cart.svg";
 
-const StyledContainer = styled.div`
+export const StyledContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,13 +11,13 @@ const StyledContainer = styled.div`
   padding: 15px 32px;
 `;
 
-const StyledNavbar = styled.nav`
+export const StyledNavbar = styled.nav`
   z-index: 999;
   display: flex;
   gap: 2.5em;
 `;
 
-const StyledNavLink = styled(Link)`
+export const StyledNavLink = styled(Link)`
   color: black;
   font-family: 'Courier', sans-serif;
   font-size: 12px;
@@ -29,7 +29,7 @@ const StyledNavLink = styled(Link)`
   }
 `;
 
-const StyledButton = styled.button`
+export const StyledButton = styled.button`
   padding: 0;
   margin: 0;
   border: .5px solid black;
@@ -44,7 +44,7 @@ const StyledButton = styled.button`
   position: relative;
 `;
 
-const StyledNumberIndicator = styled.div`
+export const StyledNumberIndicator = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,7 +60,7 @@ const StyledNumberIndicator = styled.div`
   width: 14px;
 `;
 
-const StyledHomeLink = styled(Link)`
+export const StyledHomeLink = styled(Link)`
   color: black;
   font-family: 'Courier', sans-serif;
   font-size: 12px;
@@ -74,28 +74,3 @@ const StyledHomeLink = styled(Link)`
     text-decoration: underline;
   }
 `;
-
-const NavBar: React.FC = () => {
-  return (
-    <StyledContainer>
-        <StyledNavbar>
-          <StyledHomeLink to="/">
-            The Workshop
-          </StyledHomeLink>
-          <StyledNavLink to="/about">
-            Carl Auböck Designs 1930—1980
-          </StyledNavLink>
-        </StyledNavbar>
-        <StyledContainer>
-          <StyledNavLink to="/about">
-            About
-          </StyledNavLink>
-          <StyledButton>
-            <StyledNumberIndicator>7</StyledNumberIndicator>
-          </StyledButton>
-        </StyledContainer>
-      </StyledContainer>
-  );
-};
-
-export default NavBar;

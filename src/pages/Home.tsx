@@ -1,6 +1,6 @@
 import React from 'react';
-import ProductGallery from '../components/ProductGallery';
-import Hero from '../components/Hero';
+import ProductGallery from '../components/ProductGallery/ProductGallery';
+import Hero from '../components/Header/Header';
 
 const Home: React.FC = () => {
   return (

@@ -1,8 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
-import Navbar from './components/Navbar';
-import styled, { createGlobalStyle } from 'styled-components';
+import Navbar from './components/Navbar/Navbar';
+import { createGlobalStyle } from 'styled-components';
 import OddFontWoff from './assets/fonts/Ogg-Regular.woff';
 import OddFontWoff2 from './assets/fonts/Ogg-Regular.woff2';
 
@@ -19,24 +19,19 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
+    background-color: #F8F6ED;
   }
-`;
-
-const StyledContainer = styled.main`
-  background-color: #F8F6ED;
 `;
 
 const App: React.FC = () => {
   return (
     <>
       <GlobalStyle />
-      <StyledContainer>
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='about' element={<About />} />
         </Routes>
-      </StyledContainer>
     </>
   );
 };

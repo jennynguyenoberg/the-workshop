@@ -1,13 +1,6 @@
-import { Product } from '../types/types';
-import styled from 'styled-components';
-import { formatCurrency } from '../utils/formatCurrency'
-
-const ProductItemContainer = styled.div`
-  border: 1px solid #ccc;
-  padding: 16px;
-  margin: 16px;
-  max-width: 300px;
-`;
+import { Product } from '../../types/types';
+import { ProductItemContainer } from './ProductItem.styles';
+import { formatCurrency } from '../../utils/formatCurrency';
 
 interface ProductItemProps {
   product: Product;
@@ -17,6 +10,7 @@ const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
   return (
     <ProductItemContainer>
       <img src={product.img} alt={product.name} />
+      <p>{product.objectNum}</p>
       <h2>{product.name}</h2>
       <p>{product.objectDesc}</p>
       <p>Price: {formatCurrency(product.price)}</p>

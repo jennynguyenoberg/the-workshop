@@ -1,14 +1,8 @@
 import { useState, useEffect } from 'react';
-import { Product } from '../types/types';
-import ProductItem from './ProductItem';
-import styled from 'styled-components';
-import productsData from '../data/products.json';
-
-const GalleryContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-`;
+import { Product } from '../../types/types';
+import ProductItem from '../ProductItem/ProductItem';
+import { GalleryContainer } from './ProductGallery.styles';
+import productsData from '../../data/products.json';
 
 const ProductGallery: React.FC = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -21,7 +15,7 @@ const ProductGallery: React.FC = () => {
     }, 1000);
   }, []);
 
-  // Create a new array without the first element
+  // Create a new array without the first list item
   const productsWithoutFirst = products.slice(1);
 
   return (
