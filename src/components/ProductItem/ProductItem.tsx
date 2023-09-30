@@ -1,5 +1,5 @@
 import { Product } from '../../types/types';
-import { ProductItemContainer } from './ProductItem.styles';
+import { ProductItemContainer, ProductText } from './ProductItem.styles';
 import { formatCurrency } from '../../utils/formatCurrency';
 
 interface ProductItemProps {
@@ -10,10 +10,17 @@ const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
   return (
     <ProductItemContainer>
       <img src={product.img} alt={product.name} />
-      <p>{product.objectNum}</p>
-      <h2>{product.name}</h2>
-      <p>{product.objectDesc}</p>
-      <p>Price: {formatCurrency(product.price)}</p>
+      <ProductText>{product.objectNum}</ProductText>
+      <ProductText>
+        <p>{product.collection}<br />{product.name}</p>
+      </ProductText>
+      <ProductText>
+        <p>{product.year}<br />{product.material}<br />{product.dimensions}</p>  
+      </ProductText>
+      <ProductText>
+        <p>{product.objectDesc}</p>
+        <p>{formatCurrency(product.price)}</p>
+      </ProductText>
     </ProductItemContainer>
   );
 };

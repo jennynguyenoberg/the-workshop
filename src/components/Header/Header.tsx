@@ -25,6 +25,7 @@ const ProductItem: React.FC<HeroImageProps> = ({ product }) => {
 };
 
 const Hero: React.FC = () => {
+  // Check for the first item in the array and render only the first item
   if (productsData.length > 0) {
     const firstProduct = productsData[0];
 
