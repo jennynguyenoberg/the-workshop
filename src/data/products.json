@@ -6,7 +6,6 @@
     "collection": "",
     "material": "",
     "dimensions": "",
-    "objectDesc": "",
     "objectNum": 0,
     "price": 0,
     "img": "/images/hero-flatlay.jpg"
@@ -18,7 +17,6 @@
     "collection": "Carl Auböck III",
     "material": "stainless steel teak, brass",
     "dimensions": "9¾ w × ½ d × ¼ h in",
-    "objectDesc": "Each set is comprised of four forks; twelve forks total. Sold with original boxes.",
     "objectNum": 232,
     "price": 200,
     "img": "/images/fondue-fork-set.jpg"
@@ -30,7 +28,6 @@
     "collection": "Carl Auböck II",
     "material": "silver",
     "dimensions": "4¾ w × 3 d × 2 h in",
-    "objectDesc": "This rare and custom design is made of silver. It is the only known work in silver to come out of the Auböck workshop.",
     "objectNum": 120,
     "price": 2500,
     "img": "/images/silver-bowl.jpg"
@@ -42,7 +39,6 @@
     "collection": "Carl Auböck III",
     "material": "beech, stained beech, nickel- plated steel, enameled steel",
     "dimensions": "14½ w × 14¼ d × 1¼ h in",
-    "objectDesc": "Sold with vintage box which folds into playing board.",
     "objectNum": 121,
     "price": 1500,
     "img": "/images/chess-set.jpg"
@@ -54,7 +50,6 @@
     "collection": "Carl Auböck II",
     "material": "polished brass",
     "dimensions": "2¾ w × 1½ d × 5 h in",
-    "objectDesc": "",
     "objectNum": 142,
     "price": 1000,
     "img": "/images/bookends.jpg"
@@ -66,7 +61,6 @@
     "collection": "Carl Auböck II",
     "material": "patinated brass",
     "dimensions": "6 w × 2½ d × 1 h in",
-    "objectDesc": "",
     "objectNum": 118,
     "price": 200,
     "img": "/images/ashtray.jpg"
@@ -78,7 +72,6 @@
     "collection": "Carl Auböck III",
     "material": "walnut, horsehair",
     "dimensions": "5½ w × 5½ d × 2 h in",
-    "objectDesc": "",
     "objectNum": 107,
     "price": 100,
     "img": "/images/clothes-brush.jpg"

@@ -5,7 +5,6 @@ export interface Product {
   collection: string;
   material: string;
   dimensions: string;
-  objectDesc: string;
   objectNum: number;
   price: number;
   img: string;

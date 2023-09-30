@@ -4,7 +4,6 @@ export const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   height: 100vh;
-
   margin-top: -6.12rem;
 `;
 

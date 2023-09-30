@@ -4,7 +4,7 @@ import {
   ProductText,
   ProductImage,
   ProductTextContent,
-  ProductTextPara,
+  ProductTextPara
 } from './ProductItem.styles';
 import { formatCurrency } from '../../utils/formatCurrency';
 
@@ -30,7 +30,6 @@ const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
               <ProductTextPara>{product.material}</ProductTextPara>
               <ProductTextPara>{product.dimensions}</ProductTextPara>
             </ProductTextContent>
-            <ProductTextContent>{product.objectDesc}</ProductTextContent>
             <ProductTextContent>{formatCurrency(product.price)}</ProductTextContent>
           </ProductText>
           <ProductImage src={product.img} alt={product.name} />
@@ -49,7 +48,6 @@ const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
               <ProductTextPara>{product.material}</ProductTextPara>
               <ProductTextPara>{product.dimensions}</ProductTextPara>
             </ProductTextContent>
-            <ProductTextContent>{product.objectDesc}</ProductTextContent>
             <ProductTextContent>{formatCurrency(product.price)}</ProductTextContent>
           </ProductText>
         </>
