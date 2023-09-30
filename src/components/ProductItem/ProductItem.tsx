@@ -1,5 +1,11 @@
 import { Product } from '../../types/types';
-import { ProductItemContainer, ProductText } from './ProductItem.styles';
+import {
+  ProductItemContainer,
+  ProductText,
+  ProductImage,
+  ProductTextContent,
+  ProductTextPara
+} from './ProductItem.styles';
 import { formatCurrency } from '../../utils/formatCurrency';
 
 interface ProductItemProps {
@@ -9,17 +15,20 @@ interface ProductItemProps {
 const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
   return (
     <ProductItemContainer>
-      <img src={product.img} alt={product.name} />
-      <ProductText>{product.objectNum}</ProductText>
+      <ProductImage src={product.img} alt={product.name} />
       <ProductText>
-        <p>{product.collection}<br />{product.name}</p>
-      </ProductText>
-      <ProductText>
-        <p>{product.year}<br />{product.material}<br />{product.dimensions}</p>  
-      </ProductText>
-      <ProductText>
-        <p>{product.objectDesc}</p>
-        <p>{formatCurrency(product.price)}</p>
+        <ProductTextContent>{product.objectNum}</ProductTextContent>
+        <ProductTextContent>
+          <ProductTextPara>{product.collection}</ProductTextPara>
+          <ProductTextPara>{product.name}</ProductTextPara>
+        </ProductTextContent>
+        <ProductTextContent>
+          <ProductTextPara>{product.year}</ProductTextPara>
+          <ProductTextPara>{product.material}</ProductTextPara>
+          <ProductTextPara>{product.dimensions}</ProductTextPara>
+        </ProductTextContent>
+        <ProductTextContent>{product.objectDesc}</ProductTextContent>
+        <ProductTextContent>{formatCurrency(product.price)}</ProductTextContent>
       </ProductText>
     </ProductItemContainer>
   );
