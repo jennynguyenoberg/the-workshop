@@ -38,7 +38,6 @@ const BounceAnimation = keyframes`
   }
 `;
 
-
 export const Dot = styled.div<DotProps>`
   background-color: black;
   border-radius: 50%;
@@ -48,4 +47,3 @@ export const Dot = styled.div<DotProps>`
   animation: ${BounceAnimation} 0.5s linear infinite;
   animation-delay: ${(props) => props.delay};
 `;
-
