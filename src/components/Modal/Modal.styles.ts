@@ -17,7 +17,7 @@ export const ModalContainer = styled.div<{ isOpen: boolean }>`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #F8F6ED;
+  background-color: #f8f6ed;
   padding: 3em 10em;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   z-index: 1001;

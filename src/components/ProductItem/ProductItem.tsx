@@ -9,7 +9,7 @@ import {
 } from "./ProductItem.styles";
 import { formatCurrency } from "../../utils/formatCurrency";
 import Button from "../Button/Button";
-import Modal from '../Modal/Modal'
+import Modal from "../Modal/Modal";
 
 interface ProductItemProps {
   product: Product;
@@ -34,7 +34,12 @@ const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
         alt={product.name}
         style={{ order: isThirdItem ? 2 : 1 }} // Set the order style for image
       />
-      <ProductText style={{ order: isThirdItem ? 1 : 2, textAlign: isThirdItem ? "right" : "left" }}>
+      <ProductText
+        style={{
+          order: isThirdItem ? 1 : 2,
+          textAlign: isThirdItem ? "right" : "left",
+        }}
+      >
         <ProductTextContent>{product.objectNum}</ProductTextContent>
         <ProductTextContent>
           <ProductTextPara>{product.collection}</ProductTextPara>
@@ -45,9 +50,7 @@ const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
           <ProductTextPara>{product.material}</ProductTextPara>
           <ProductTextPara>{product.dimensions}</ProductTextPara>
         </ProductTextContent>
-        <ProductTextContent>
-          {formatCurrency(product.price)}
-        </ProductTextContent>
+        <ProductTextContent>{formatCurrency(product.price)}</ProductTextContent>
         <Button onClick={handleClick}>Add to cart</Button>
         <Modal
           isOpen={isModalOpen}

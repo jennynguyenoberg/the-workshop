@@ -1,4 +1,9 @@
-import { ModalOverlay, ModalContainer, ModalContent, ModalButton } from "./Modal.styles";
+import {
+  ModalOverlay,
+  ModalContainer,
+  ModalContent,
+  ModalButton,
+} from "./Modal.styles";
 
 interface ModalProps {
   isOpen: boolean;

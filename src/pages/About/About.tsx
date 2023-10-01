@@ -2,7 +2,7 @@ import Footer from "../../components/Footer/Footer";
 import {
   StyledMainContainer,
   StyledLeftContainer,
-  StyledRightContainer
+  StyledRightContainer,
 } from "./About.styles";
 
 const About: React.FC = () => {
@@ -12,12 +12,11 @@ const About: React.FC = () => {
         <StyledLeftContainer>
           <h1>About Us</h1>
           <p>
-            This is an online art gallery showcasing the work of talented artists.
+            This is an online art gallery showcasing the work of talented
+            artists.
           </p>
         </StyledLeftContainer>
-        <StyledRightContainer>
-
-        </StyledRightContainer>
+        <StyledRightContainer></StyledRightContainer>
       </StyledMainContainer>
       <Footer />
     </>

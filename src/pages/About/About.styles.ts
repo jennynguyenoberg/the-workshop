@@ -5,10 +5,6 @@ export const StyledMainContainer = styled.div`
   margin: 5em 4em;
 `;
 
-export const StyledLeftContainer = styled.div`
-  
-`;
+export const StyledLeftContainer = styled.div``;
 
-export const StyledRightContainer = styled.div`
-  
-`;
+export const StyledRightContainer = styled.div``;

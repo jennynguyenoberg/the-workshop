@@ -2,10 +2,7 @@ import { useState, useEffect } from "react";
 import { Product } from "../../types/types";
 import ProductItem from "../ProductItem/ProductItem";
 import productsData from "../../data/products.json";
-import {
-  GalleryContainer,
-  ProductRow
-} from "./ProductGallery.styles";
+import { GalleryContainer, ProductRow } from "./ProductGallery.styles";
 
 const ProductGallery: React.FC = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
