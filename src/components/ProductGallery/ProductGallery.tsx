@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Product } from "../../types/types";
 import ProductItem from "../ProductItem/ProductItem";
 import productsData from "../../data/products.json";
-import { GalleryContainer, ProductRow } from "./ProductGallery.styles";
+import { GalleryContainer, ProductRow, LoadingWrapper, Dot } from "./ProductGallery.styles";
 
 const ProductGallery: React.FC = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -21,7 +21,12 @@ const ProductGallery: React.FC = () => {
   return (
     <div>
       {isLoading ? (
-        <p>Loading...</p>
+        <LoadingWrapper>
+          Loading
+          <Dot delay="0s" />
+          <Dot delay="0.1s" />
+          <Dot delay="0.2s" />
+        </LoadingWrapper>
       ) : (
         <GalleryContainer>
           {products.slice(1, -3).map((product) => (
