@@ -5,7 +5,7 @@ A TypeScript project using Styled Components and React Hooks.
 <div align="center">
   <img 
     alt="Image of website" 
-    src="https://github.com/jennynguyenoberg/the-workshop/assets/116844306/788e6ed2-c948-4155-8f66-8c0d99df4a7f" width="100%" />
+    src="https://github.com/jennynguyenoberg/the-workshop/assets/116844306/e53c998c-f823-4c2f-98e8-a11d18cb224c" width="100%" />
 </div>
 
 
