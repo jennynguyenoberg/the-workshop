@@ -1,19 +1,19 @@
-import { Product } from '../../types/types';
+import { Product } from "../../types/types";
 import {
   ProductItemContainer,
   ProductText,
   ProductImage,
   ProductTextContent,
-  ProductTextPara
-} from './ProductItem.styles';
-import { formatCurrency } from '../../utils/formatCurrency';
+  ProductTextPara,
+} from "./ProductItem.styles";
+import { formatCurrency } from "../../utils/formatCurrency";
 
 interface ProductItemProps {
   product: Product;
 }
 
 const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
-  const TextAlignment = product.id === 3 ? 'right' : 'left';
+  const TextAlignment = product.id === 3 ? "right" : "left";
 
   return (
     <ProductItemContainer>
@@ -30,7 +30,9 @@ const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
               <ProductTextPara>{product.material}</ProductTextPara>
               <ProductTextPara>{product.dimensions}</ProductTextPara>
             </ProductTextContent>
-            <ProductTextContent>{formatCurrency(product.price)}</ProductTextContent>
+            <ProductTextContent>
+              {formatCurrency(product.price)}
+            </ProductTextContent>
           </ProductText>
           <ProductImage src={product.img} alt={product.name} />
         </>
@@ -48,7 +50,9 @@ const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
               <ProductTextPara>{product.material}</ProductTextPara>
               <ProductTextPara>{product.dimensions}</ProductTextPara>
             </ProductTextContent>
-            <ProductTextContent>{formatCurrency(product.price)}</ProductTextContent>
+            <ProductTextContent>
+              {formatCurrency(product.price)}
+            </ProductTextContent>
           </ProductText>
         </>
       )}

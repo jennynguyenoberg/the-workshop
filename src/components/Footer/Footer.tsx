@@ -1,13 +1,13 @@
 import {
   StyledMainContainer,
   StyledContainer,
-  StyledNavLink
-} from './Footer.styles';
+  StyledNavLink,
+} from "./Footer.styles";
 
 const Footer: React.FC = () => {
   const linkStyle = {
-    marginRight: '8px',
-    marginLeft: '8px'
+    marginRight: "8px",
+    marginLeft: "8px",
   };
 
   return (
@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
         © Rago Wright LLC 2023.
       </StyledContainer>
       <StyledContainer>
-          Development and design by Jenny Nguyen Öberg © 2023
+        Development and design by Jenny Nguyen Öberg © 2023
       </StyledContainer>
     </StyledMainContainer>
   );

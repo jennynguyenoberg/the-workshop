@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 import cartImage from "/images/Cart.svg";
 
 export const StyledContainer = styled.div`
@@ -19,12 +19,12 @@ export const StyledNavbar = styled.nav`
 
 export const StyledNavLink = styled(Link)`
   color: black;
-  font-family: 'Courier', sans-serif;
+  font-family: "Courier", sans-serif;
   font-size: 12px;
   text-decoration: none;
 
   &:hover {
-    color: black; 
+    color: black;
     text-decoration: underline;
   }
 `;
@@ -47,7 +47,7 @@ export const StyledNumberIndicator = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #F9CB00;
+  background-color: #f9cb00;
   color: black;
   border-radius: 50%;
   font-size: 7px;
@@ -61,15 +61,15 @@ export const StyledNumberIndicator = styled.div`
 
 export const StyledHomeLink = styled(Link)`
   color: black;
-  font-family: 'Courier', sans-serif;
+  font-family: "Courier", sans-serif;
   font-size: 12px;
   text-decoration: none;
   text-transform: uppercase;
   transform: rotate(90deg) translateY(70px) translateX(90px);
-  letter-spacing: .7em;
+  letter-spacing: 0.7em;
 
   &:hover {
-    color: black; 
+    color: black;
     text-decoration: underline;
   }
 `;

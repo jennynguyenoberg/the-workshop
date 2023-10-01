@@ -1,10 +1,10 @@
-import { Routes, Route } from 'react-router-dom';
-import Home from './pages/Home/Home';
-import About from './pages/About/About';
-import Navbar from './components/Navbar/Navbar';
-import { createGlobalStyle } from 'styled-components';
-import OddFontWoff from './assets/fonts/Ogg-Regular.woff';
-import OddFontWoff2 from './assets/fonts/Ogg-Regular.woff2';
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Navbar from "./components/Navbar/Navbar";
+import { createGlobalStyle } from "styled-components";
+import OddFontWoff from "./assets/fonts/Ogg-Regular.woff";
+import OddFontWoff2 from "./assets/fonts/Ogg-Regular.woff2";
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -30,8 +30,8 @@ const App: React.FC = () => {
       <GlobalStyle />
       <Navbar />
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='about' element={<About />} />
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
       </Routes>
     </>
   );

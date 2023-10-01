@@ -1,8 +1,8 @@
-import { useState, useEffect } from 'react';
-import { Product } from '../../types/types';
-import ProductItem from '../ProductItem/ProductItem';
-import productsData from '../../data/products.json';
-import { GalleryContainer, ProductRow } from './ProductGallery.styles'; // Import ProductRow
+import { useState, useEffect } from "react";
+import { Product } from "../../types/types";
+import ProductItem from "../ProductItem/ProductItem";
+import productsData from "../../data/products.json";
+import { GalleryContainer, ProductRow } from "./ProductGallery.styles"; // Import ProductRow
 
 const ProductGallery: React.FC = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -23,10 +23,10 @@ const ProductGallery: React.FC = () => {
       {isLoading ? (
         <p>Loading...</p>
       ) : (
-          <GalleryContainer>
-            {products.slice(1, -3).map((product) => (
-              <ProductItem key={product.id} product={product} />
-            ))}
+        <GalleryContainer>
+          {products.slice(1, -3).map((product) => (
+            <ProductItem key={product.id} product={product} />
+          ))}
 
           <ProductRow>
             {lastThreeProducts.map((product) => (

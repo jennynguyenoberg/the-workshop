@@ -1,5 +1,5 @@
-import { Product } from '../../types/types';
-import productsData from '../../data/products.json';
+import { Product } from "../../types/types";
+import productsData from "../../data/products.json";
 import {
   Container,
   LeftSide,
@@ -10,7 +10,7 @@ import {
   LeftSideContainer,
   StyledParagraph,
   StyledWord,
-} from './Header.styles';
+} from "./Header.styles";
 
 interface HeroImageProps {
   product: Product;
@@ -34,10 +34,16 @@ const Hero: React.FC = () => {
         <LeftSide>
           <LeftSideContainer>
             <StyledText>The</StyledText>
-            <SignatureImage src='/images/signature.svg' alt='Signature of Carl Auböck'></SignatureImage>
+            <SignatureImage
+              src="/images/signature.svg"
+              alt="Signature of Carl Auböck"
+            ></SignatureImage>
           </LeftSideContainer>
           <StyledWord>Workshop</StyledWord>
-          <StyledParagraph>Carl Auböck: A Visionary of Modern Design, Masterfully Crafting Timeless Pieces.</StyledParagraph>
+          <StyledParagraph>
+            Carl Auböck: A Visionary of Modern Design, Masterfully Crafting
+            Timeless Pieces.
+          </StyledParagraph>
         </LeftSide>
         <ProductItem product={firstProduct} />
       </Container>

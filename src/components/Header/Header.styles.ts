@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
@@ -34,7 +34,7 @@ export const SignatureImage = styled.img`
 `;
 
 export const StyledText = styled.h1`
-  font-family: 'Odd', serif;
+  font-family: "Odd", serif;
   font-size: 100px;
   font-weight: lighter;
   background-color: transparent;
@@ -49,7 +49,7 @@ export const LeftSideContainer = styled.div`
 `;
 
 export const StyledParagraph = styled.p`
-  font-family: 'Courier', sans-serif;
+  font-family: "Courier", sans-serif;
   font-size: 12px;
   font-weight: lighter;
   display: flex;
@@ -59,10 +59,10 @@ export const StyledParagraph = styled.p`
 `;
 
 export const StyledWord = styled.h1`
-  font-family: 'Odd', serif;
+  font-family: "Odd", serif;
   font-size: 100px;
   font-weight: lighter;
   background-color: transparent;
-  margin-top: -.5em;
+  margin-top: -0.5em;
   padding-left: 1.1em;
 `;
