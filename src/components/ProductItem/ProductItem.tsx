@@ -11,13 +11,12 @@ import { formatCurrency } from "../../utils/formatCurrency";
 import Button from "../Button/Button";
 import Modal from '../Modal/Modal'
 
-
 interface ProductItemProps {
   product: Product;
 }
 
 const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
-  const TextAlignment = product.id === 3 ? "right" : "left";
+  const isThirdItem = product.id === 3;
   const [isModalOpen, setIsModalOpen] = useState(false); // State to control the modal
 
   const handleClick = () => {
@@ -30,57 +29,32 @@ const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
 
   return (
     <ProductItemContainer>
-      {product.id === 3 ? (
-        <>
-          <ProductImage src={product.img} alt={product.name} />
-          <ProductText style={{ textAlign: TextAlignment }}>
-            <ProductTextContent>{product.objectNum}</ProductTextContent>
-            <ProductTextContent>
-              <ProductTextPara>{product.collection}</ProductTextPara>
-              <ProductTextPara>{product.name}</ProductTextPara>
-            </ProductTextContent>
-            <ProductTextContent>
-              <ProductTextPara>{product.year}</ProductTextPara>
-              <ProductTextPara>{product.material}</ProductTextPara>
-              <ProductTextPara>{product.dimensions}</ProductTextPara>
-            </ProductTextContent>
-            <ProductTextContent>
-              {formatCurrency(product.price)}
-            </ProductTextContent>
-            <Button onClick={handleClick}>Add to cart</Button>
-            <Modal
-              isOpen={isModalOpen}
-              onClose={closeModal}
-              message="Product not available."
-            />
-          </ProductText>
-        </>
-      ) : (
-        <>
-          <ProductImage src={product.img} alt={product.name} />
-          <ProductText style={{ textAlign: TextAlignment }}>
-            <ProductTextContent>{product.objectNum}</ProductTextContent>
-            <ProductTextContent>
-              <ProductTextPara>{product.collection}</ProductTextPara>
-              <ProductTextPara>{product.name}</ProductTextPara>
-            </ProductTextContent>
-            <ProductTextContent>
-              <ProductTextPara>{product.year}</ProductTextPara>
-              <ProductTextPara>{product.material}</ProductTextPara>
-              <ProductTextPara>{product.dimensions}</ProductTextPara>
-            </ProductTextContent>
-            <ProductTextContent>
-              {formatCurrency(product.price)}
-              </ProductTextContent>
-              <Button onClick={handleClick}>Add to cart</Button>
-              <Modal
-                isOpen={isModalOpen}
-                onClose={closeModal}
-                message="Product not available."
-              />
-          </ProductText>
-        </>
-      )}
+      <ProductImage
+        src={product.img}
+        alt={product.name}
+        style={{ order: isThirdItem ? 2 : 1 }} // Set the order style for image
+      />
+      <ProductText style={{ order: isThirdItem ? 1 : 2, textAlign: isThirdItem ? "right" : "left" }}>
+        <ProductTextContent>{product.objectNum}</ProductTextContent>
+        <ProductTextContent>
+          <ProductTextPara>{product.collection}</ProductTextPara>
+          <ProductTextPara>{product.name}</ProductTextPara>
+        </ProductTextContent>
+        <ProductTextContent>
+          <ProductTextPara>{product.year}</ProductTextPara>
+          <ProductTextPara>{product.material}</ProductTextPara>
+          <ProductTextPara>{product.dimensions}</ProductTextPara>
+        </ProductTextContent>
+        <ProductTextContent>
+          {formatCurrency(product.price)}
+        </ProductTextContent>
+        <Button onClick={handleClick}>Add to cart</Button>
+        <Modal
+          isOpen={isModalOpen}
+          onClose={closeModal}
+          message="Product not available."
+        />
+      </ProductText>
     </ProductItemContainer>
   );
 };
