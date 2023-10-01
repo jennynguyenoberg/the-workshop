@@ -5,11 +5,11 @@ A TypeScript project using Styled Components and React Hooks.
 <div align="center">
   <img 
     alt="Image of website" 
-    src="https://github.com/jennynguyenoberg/the-workshop/assets/116844306/9cd30401-6a02-4ab8-ab09-85d808a6fade" width="100%" />
+    src="https://github.com/jennynguyenoberg/the-workshop/assets/116844306/788e6ed2-c948-4155-8f66-8c0d99df4a7f" width="100%" />
 </div>
 
-## Description
 
+## Description
 This project is a simple web application built with TypeScript, Styled Components, and React Hooks (useState and useEffect). It serves as a template for creating a (non-functional) e-commerce website with these technologies.
 
 ## Table of Contents
