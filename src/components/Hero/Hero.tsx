@@ -10,7 +10,7 @@ import {
   LeftSideContainer,
   StyledParagraph,
   StyledWord,
-} from "./Header.styles";
+} from "./Hero.styles";
 
 interface HeroImageProps {
   product: Product;

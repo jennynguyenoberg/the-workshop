@@ -1,3 +1,4 @@
+import Footer from "../../components/Footer/Footer";
 import {
   StyledMainContainer,
   StyledLeftContainer,
@@ -18,6 +19,7 @@ const About: React.FC = () => {
 
         </StyledRightContainer>
       </StyledMainContainer>
+      <Footer />
     </>
   );
 };

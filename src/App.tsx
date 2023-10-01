@@ -5,7 +5,6 @@ import Navbar from "./components/Navbar/Navbar";
 import { createGlobalStyle } from "styled-components";
 import OddFontWoff from "./assets/fonts/Ogg-Regular.woff";
 import OddFontWoff2 from "./assets/fonts/Ogg-Regular.woff2";
-import Footer from "./components/Footer/Footer";
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
@@ -34,7 +33,6 @@ const App: React.FC = () => {
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
       </Routes>
-      <Footer />
     </>
   );
 };
