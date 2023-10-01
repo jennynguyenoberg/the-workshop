@@ -21,6 +21,11 @@ export const ModalContainer = styled.div<{ isOpen: boolean }>`
   padding: 3em 10em;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   z-index: 1001;
+  
+  @media (max-width: 992px) {
+    width: 50%;
+    padding: 3em;
+  }
 `;
 
 export const ModalContent = styled.div`
@@ -28,20 +33,20 @@ export const ModalContent = styled.div`
 `;
 
 export const ModalButton = styled.button`
-background-color: transparent;
-color: black;
-margin-top: 1em;
-margin-right: -5px;
-padding: 5px 15px;
-border: 0.5px solid black;
-cursor: pointer;
-border-radius: 20px;
-width 20px;
-font-family: 'Courier', sans-serif;
-font-size: 12px;
+  background-color: transparent;
+  color: black;
+  margin-top: 1em;
+  margin-right: -5px;
+  padding: 5px 15px;
+  border: 0.5px solid black;
+  cursor: pointer;
+  border-radius: 20px;
+  width 20px;
+  font-family: 'Courier', sans-serif;
+  font-size: 12px;
 
-&:hover {
-  background-color: black;
-  color: #F8F6ED;
-}
+  &:hover {
+    background-color: black;
+    color: #F8F6ED;
+  }
 `;

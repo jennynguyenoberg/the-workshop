@@ -41,6 +41,10 @@ export const StyledButton = styled.button`
   width: 34px;
   height: 34px;
   position: relative;
+
+  @media only screen and (max-width: 992px) {
+    margin: 0 -2em 0 -1em;
+  }
 `;
 
 export const StyledNumberIndicator = styled.div`
@@ -71,5 +75,9 @@ export const StyledHomeLink = styled(Link)`
   &:hover {
     color: black;
     text-decoration: underline;
+  }
+
+  @media only screen and (max-width: 992px) {
+    display: none;
   }
 `;

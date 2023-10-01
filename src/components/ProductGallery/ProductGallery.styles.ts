@@ -5,7 +5,10 @@ interface DotProps {
 }
 
 export const GalleryContainer = styled.div`
-  margin: 5em 4em;
+  margin: 0 4em;
+  @media only screen and (max-width: 992px) {
+    margin: -10em 2em 0;
+  }
 `;
 
 export const ProductRow = styled.div`
