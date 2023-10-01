@@ -46,7 +46,7 @@ export const SignatureImage = styled.img`
 export const LeftSideContainer = styled.div`
   display: flex;
   align-items: center;
-  margin: 16em 0 -4em 0;
+  margin: 12em 0 -4em 0;
 `;
 
 export const StyledParagraph = styled.p`
