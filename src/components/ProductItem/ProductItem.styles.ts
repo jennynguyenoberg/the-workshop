@@ -13,8 +13,6 @@ export const ProductItemContainer = styled.div`
 export const ProductText = styled.div`
   flex: 1;
   padding: 0 24px;
-  display: flex;
-  flex-direction: column;
 `;
 
 export const ProductImage = styled.img``;
