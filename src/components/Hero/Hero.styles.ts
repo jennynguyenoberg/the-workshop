@@ -33,7 +33,7 @@ export const HeroImage = styled.img`
   width: 100%;
 
   @media only screen and (max-width: 992px) {
-    display: none; 
+    display: none;
   }
 `;
 
@@ -49,15 +49,14 @@ export const StyledText = styled.h1`
   font-weight: lighter;
   background-color: transparent;
   margin: 0;
+`;
 
-  `;
-  
-  export const LeftSideContainer = styled.div`
+export const LeftSideContainer = styled.div`
   display: flex;
   align-items: center;
   margin-top: 10em;
   padding-left: 3em;
-  
+
   @media only screen and (max-width: 992px) {
     margin-left: -1.5em;
   }
@@ -73,7 +72,7 @@ export const StyledParagraph = styled.p`
   padding: 0 5em 0 25em;
 
   @media only screen and (max-width: 992px) {
-    text-align:left;
+    text-align: left;
     padding: 0 3em;
   }
 `;
@@ -87,4 +86,3 @@ export const StyledWord = styled.h1`
   display: flex;
   align-items: center;
 `;
-

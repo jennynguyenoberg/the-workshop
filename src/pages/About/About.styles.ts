@@ -46,15 +46,15 @@ export const StyledImageContainer = styled.div`
   @media (max-width: 992px) {
     display: none;
   }
-  `;
-  
-  export const StyledImage1 = styled.img`
-    margin-bottom: 13em;
-    padding-right: 3.5em;
-  `;
-  
-  // @media (max-width: 992px) {
-  //   margin-top: 3em;
-  //   display: flex;
-  //   justify-content: center;
-  // }
+`;
+
+export const StyledImage1 = styled.img`
+  margin-bottom: 13em;
+  padding-right: 3.5em;
+`;
+
+// @media (max-width: 992px) {
+//   margin-top: 3em;
+//   display: flex;
+//   justify-content: center;
+// }

@@ -12,7 +12,7 @@ export const ProductItemContainer = styled.div`
   @media only screen and (max-width: 992px) {
     flex-direction: column;
     align-items: flex-start;
-    padding: 0 .5em;
+    padding: 0 0.5em;
   }
 `;
 
@@ -29,7 +29,7 @@ export const ProductText = styled.div`
 export const ProductImage = styled.img`
   @media only screen and (max-width: 992px) {
     width: 100%;
-    margin: 1em 0; 
+    margin: 1em 0;
   }
 `;
 

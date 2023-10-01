@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const StyledMainContainer = styled.footer`
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: left;
   padding: 2.5em 2.5em;
   font-family: "Courier", sans-serif;

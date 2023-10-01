@@ -21,7 +21,7 @@ export const ModalContainer = styled.div<{ isOpen: boolean }>`
   padding: 3em 10em;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   z-index: 1001;
-  
+
   @media (max-width: 992px) {
     width: 50%;
     padding: 3em;
