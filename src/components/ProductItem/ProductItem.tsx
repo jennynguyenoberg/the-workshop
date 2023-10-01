@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Product } from "../../types/types";
 import {
   ProductItemContainer,
@@ -8,6 +9,8 @@ import {
 } from "./ProductItem.styles";
 import { formatCurrency } from "../../utils/formatCurrency";
 import Button from "../Button/Button";
+import Modal from '../Modal/Modal'
+
 
 interface ProductItemProps {
   product: Product;
@@ -15,9 +18,14 @@ interface ProductItemProps {
 
 const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
   const TextAlignment = product.id === 3 ? "right" : "left";
+  const [isModalOpen, setIsModalOpen] = useState(false); // State to control the modal
 
   const handleClick = () => {
-    alert('Button clicked!');
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
   };
 
   return (
@@ -40,6 +48,11 @@ const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
               {formatCurrency(product.price)}
             </ProductTextContent>
             <Button onClick={handleClick}>Add to cart</Button>
+            <Modal
+              isOpen={isModalOpen}
+              onClose={closeModal}
+              message="Product not available."
+            />
           </ProductText>
         </>
       ) : (
@@ -60,6 +73,11 @@ const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
               {formatCurrency(product.price)}
               </ProductTextContent>
               <Button onClick={handleClick}>Add to cart</Button>
+              <Modal
+                isOpen={isModalOpen}
+                onClose={closeModal}
+                message="Product not available."
+              />
           </ProductText>
         </>
       )}
