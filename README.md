@@ -1,27 +1,51 @@
-# React + TypeScript + Vite
+# The Workshop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A TypeScript project using Styled Components and React Hooks.
 
-Currently, two official plugins are available:
+<div align="center">
+  <img 
+    alt="Image of website" 
+    src="https://github-production-user-asset-6210df.s3.amazonaws.com/116844306/271851920-37e7757e-6c01-42fb-a730-b1af7967f96b.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231001%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231001T202754Z&X-Amz-Expires=300&X-Amz-Signature=0427b3577aedc7ae8d2d22627e6a775dcedd93a37f2464304e405eed35fd1f10&X-Amz-SignedHeaders=host&actor_id=116844306&key_id=0&repo_id=698381330" width="100%" />
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Description
 
-## Expanding the ESLint configuration
+This project is a simple web application built with TypeScript, Styled Components, and React Hooks (useState and useEffect). It serves as a template for creating a (non-functional) e-commerce website with these technologies.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Table of Contents
 
-- Configure the top-level `parserOptions` property like this:
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [To-Do List](#to-do-list)
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+## Features
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- TypeScript for type safety
+- Styled Components for easy and maintainable styling
+- useState and useEffect hooks for state management and side effects
+
+## Getting Started
+
+To get started with this project, follow these steps:
+
+1. Clone the repository:
+
+   ```bash
+   git clone git@github.com:jennynguyenoberg/the-workshop.git
+2. Navigate to the project directory.
+
+   ```bash
+   cd your-project
+3. Install dependencies.
+
+   ```bash
+   npm install
+4. Start the development server.
+
+   ```bash
+   npm run dev
+## To-Do List
+
+- [ ] Implement animation to Links and/or images
+- [ ] Refining responsiveness by adding more breakpoints
+- [ ] Call mom to wish her happy birthday
