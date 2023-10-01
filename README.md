@@ -48,4 +48,4 @@ To get started with this project, follow these steps:
 
 - [ ] Implement animation to Links and/or images
 - [ ] Refining responsiveness by adding more breakpoints
-- [ ] Call mom to wish her happy birthday
+- [ ] DRY code refactoring
