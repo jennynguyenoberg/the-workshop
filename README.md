@@ -5,7 +5,7 @@ A TypeScript project using Styled Components and React Hooks.
 <div align="center">
   <img 
     alt="Image of website" 
-    src="https://github-production-user-asset-6210df.s3.amazonaws.com/116844306/271851920-37e7757e-6c01-42fb-a730-b1af7967f96b.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231001%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231001T202754Z&X-Amz-Expires=300&X-Amz-Signature=0427b3577aedc7ae8d2d22627e6a775dcedd93a37f2464304e405eed35fd1f10&X-Amz-SignedHeaders=host&actor_id=116844306&key_id=0&repo_id=698381330" width="100%" />
+    src="https://github.com/jennynguyenoberg/the-workshop/assets/116844306/9cd30401-6a02-4ab8-ab09-85d808a6fade" width="100%" />
 </div>
 
 ## Description
@@ -32,15 +32,15 @@ To get started with this project, follow these steps:
 
    ```bash
    git clone git@github.com:jennynguyenoberg/the-workshop.git
-2. Navigate to the project directory.
+2. Navigate to the project directory:
 
    ```bash
    cd your-project
-3. Install dependencies.
+3. Install dependencies:
 
    ```bash
    npm install
-4. Start the development server.
+4. Start the development server:
 
    ```bash
    npm run dev
