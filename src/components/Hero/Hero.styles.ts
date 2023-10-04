@@ -68,7 +68,7 @@ export const StyledParagraph = styled.p`
 
 export const StyledText = styled.h1`
   font-family: "Odd", serif;
-  font-size: 110px;
+  font-size: 7em;
   font-weight: lighter;
   margin-left: 1em;
 
@@ -79,7 +79,7 @@ export const StyledText = styled.h1`
 
 export const StyledWord = styled.h1`
   font-family: "Odd", serif;
-  font-size: 110px;
+  font-size: 7em;
   font-weight: lighter;
   background-color: transparent;
   margin-top: -0.5em;
