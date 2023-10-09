@@ -19,29 +19,28 @@ export const LeftSide = styled.div`
   justify-content: center;
   flex-direction: column;
 `;
-  
-export const RightSide = styled.div`
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-`;
-  
-export const HeroImage = styled.img`
-    width: 100%;
-    height: 100%;
 
-    @media only screen and (max-width: 992px) {
-      display: none;
-    }
+export const RightSide = styled.div`
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
-  
+
+export const HeroImage = styled.img`
+  width: 100%;
+  height: 100%;
+
+  @media only screen and (max-width: 992px) {
+    display: none;
+  }
+`;
+
 export const SignatureImage = styled.img`
   max-width: 45%;
   max-height: 45%;
   padding-left: 1.3em;
 `;
-
 
 export const LeftSideContainer = styled.div`
   display: flex;
